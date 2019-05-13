@@ -15,19 +15,16 @@ namespace RegMatters.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            //loquesea
-
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult LogIn()
         {
-            ViewBag.Message = "Your contact page.";
-
+            //si inicia sesión admin retornar vistas de administración
+            //si es un estudiante retornar vista de inscribir materias
+            //si el calendario aún lo permite 
             return View();
         }
+
     }
 }
